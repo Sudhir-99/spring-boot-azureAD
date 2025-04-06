@@ -1,0 +1,26 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          aad:
+            client-id: a765e5f4-426e-4ba9-b44d-1f43a2ffd611
+            client-secret: Ho28Q~JhO-FutaiGC.AgXaYxAyuxMtInKZ6mjdff
+            scope: openid,profile,email
+        provider:
+          aad:
+            issuer-uri: https://login.microsoftonline.com/d032670a-3624-426a-b92d-61970bb22949/v2.0
+
+
+server:
+  port: 9091
+
+logging:
+  level:
+    org:
+      springframework: INFO
+    com:
+      simform: INFO
+  pattern:
+    console: "%d{dd-MM-yyyy HH:mm:ss} - %msg%n"
+
