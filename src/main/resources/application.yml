@@ -4,8 +4,8 @@ spring:
       client:
         registration:
           aad:
-            client-id: a765e5f4-426e-4ba9-b44d-1f43a2ffd611
-            client-secret: Ho28Q~JhO-FutaiGC.AgXaYxAyuxMtInKZ6mjdff
+            client-id: ${AZURE_CLIENT_ID}
+            client-secret: ${AZURE_CLIENT_SECRET}
             scope: openid,profile,email
         provider:
           aad:
